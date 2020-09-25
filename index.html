@@ -1,1 +1,66 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet"><meta name="theme-color" content="#000000"/><meta name="description" content="A simple metronome application"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Metronome App</title><link href="/static/css/main.4efe5dc0.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],a=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpmetronome=this.webpackJsonpmetronome||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a<f.length;a++)r(f[a]);var p=i;t()}([])</script><script src="/static/js/2.0e667aa1.chunk.js"></script><script src="/static/js/main.354c50bd.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Guitar Excersices</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="options">
+            <label for="note_a">A</label><input type="checkbox" id="note_a" checked>
+            <label for="note_b">B</label><input type="checkbox" id="note_b" checked>
+            <label for="note_c">C</label><input type="checkbox" id="note_c" checked>
+            <label for="note_d">D</label><input type="checkbox" id="note_d" checked>
+            <label for="note_e">E</label><input type="checkbox" id="note_e" checked>
+            <label for="note_f">F</label><input type="checkbox" id="note_f" checked>
+            <label for="note_g">G</label><input type="checkbox" id="note_g" checked>
+            <label for="neutral">Neutral</label><input type="checkbox" id="note_neutral" checked>
+            <label for="sharp">Sharp</label><input type="checkbox" id="note_sharp" checked>
+            <label for="flat">Flat</label><input type="checkbox" id="note_flat" checked>
+            <button onclick="selectAllNotes()">Select all</button>
+            <button onclick="clearAllNotes()">Clear all</button>
+        </div>
+        <div class="chords">
+            <label for="chord_maj">Maj</label><input type="checkbox" id="chord_maj" checked>
+            <label for="chord_min">min</label><input type="checkbox" id="chord_min" checked>
+            <label for="chord_aug">+</label><input type="checkbox" id="chord_aug" checked>
+            <label for="chord_sus2">sus2</label><input type="checkbox" id="chord_sus2" checked>
+            <label for="chord_sus4">sus4</label><input type="checkbox" id="chord_sus4" checked>
+            <button onclick="selectAllChords()">Select all</button>
+            <button onclick="clearAllChords()">Clear all</button>
+        </div>
+        <div class="modes">
+            <label for="mode_ionian">Ionian</label><input type="checkbox" id="mode_ionian" checked>
+            <label for="mode_dorial">Dorian</label><input type="checkbox" id="mode_dorial" checked>
+            <label for="mode_phrygian">Phrygian</label><input type="checkbox" id="mode_phrygian" checked>
+            <label for="mode_lydian">Lydian</label><input type="checkbox" id="mode_lydian" checked>
+            <label for="mode_mixolydian">Mixolydian</label><input type="checkbox" id="mode_mixolydian" checked>
+            <label for="mode_aeolian">Aeolian</label><input type="checkbox" id="mode_aeolian" checked>
+            <label for="mode_locrian">Locrian</label><input type="checkbox" id="mode_locrian" checked>
+            <button onclick="selectAllModes()">Select all</button>
+            <button onclick="clearAllModes()">Clear all</button>
+        </div>
+        <div class="shapes">
+            <label for="shape_c">Shape C</label><input type="checkbox" id="shape_c" checked>
+            <label for="shape_a">Shape A</label><input type="checkbox" id="shape_a" checked>
+            <label for="shape_g">Shape G</label><input type="checkbox" id="shape_g" checked>
+            <label for="shape_e">Shape E</label><input type="checkbox" id="shape_e" checked>
+            <label for="shape_d">Shape D</label><input type="checkbox" id="shape_d" checked>
+            <button onclick="selectAllShapes()">Select all</button>
+            <button onclick="clearAllShapes()">Clear all</button>
+        </div>
+        
+        <button onclick="getRandom()">Get Random Values</button>
+
+
+        <!--div class="buttons">
+            <button onclick="randomNotes()">Random Notes</button>
+            <button onclick="randomChords()">Random Chords</button>
+            <button onclick="randomScales()">Random Scales</button>
+            <button onclick="randomScalesShapes()">Random Scales Shapes</button>
+        </div-->
+        <div id="result" class="result"></div>
+    </body>
+
+    <script src="index.js"></script>
+</html>

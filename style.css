@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgb(0, 204, 255);
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: rgb(168, 236, 253);
+
+}
+
+.result {
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.sharpflat {
+    font-size : 0.75em;
+}
