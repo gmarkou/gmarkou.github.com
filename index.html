@@ -7,6 +7,8 @@
     </head>
     <body>
         <div class="options">
+            <button onclick="selectAllNotes()">Select all</button>
+            <button onclick="clearAllNotes()">Clear all</button>
             <label for="note_a">A</label><input type="checkbox" id="note_a" checked>
             <label for="note_b">B</label><input type="checkbox" id="note_b" checked>
             <label for="note_c">C</label><input type="checkbox" id="note_c" checked>
@@ -17,19 +19,19 @@
             <label for="neutral">Neutral</label><input type="checkbox" id="note_neutral" checked>
             <label for="sharp">Sharp</label><input type="checkbox" id="note_sharp" checked>
             <label for="flat">Flat</label><input type="checkbox" id="note_flat" checked>
-            <button onclick="selectAllNotes()">Select all</button>
-            <button onclick="clearAllNotes()">Clear all</button>
         </div>
         <div class="chords">
+            <button onclick="selectAllChords()">Select all</button>
+            <button onclick="clearAllChords()">Clear all</button>
             <label for="chord_maj">Maj</label><input type="checkbox" id="chord_maj" checked>
             <label for="chord_min">min</label><input type="checkbox" id="chord_min" checked>
             <label for="chord_aug">+</label><input type="checkbox" id="chord_aug" checked>
             <label for="chord_sus2">sus2</label><input type="checkbox" id="chord_sus2" checked>
             <label for="chord_sus4">sus4</label><input type="checkbox" id="chord_sus4" checked>
-            <button onclick="selectAllChords()">Select all</button>
-            <button onclick="clearAllChords()">Clear all</button>
         </div>
         <div class="modes">
+            <button onclick="selectAllModes()">Select all</button>
+            <button onclick="clearAllModes()">Clear all</button>
             <label for="mode_ionian">Ionian</label><input type="checkbox" id="mode_ionian" checked>
             <label for="mode_dorial">Dorian</label><input type="checkbox" id="mode_dorial" checked>
             <label for="mode_phrygian">Phrygian</label><input type="checkbox" id="mode_phrygian" checked>
@@ -37,17 +39,15 @@
             <label for="mode_mixolydian">Mixolydian</label><input type="checkbox" id="mode_mixolydian" checked>
             <label for="mode_aeolian">Aeolian</label><input type="checkbox" id="mode_aeolian" checked>
             <label for="mode_locrian">Locrian</label><input type="checkbox" id="mode_locrian" checked>
-            <button onclick="selectAllModes()">Select all</button>
-            <button onclick="clearAllModes()">Clear all</button>
         </div>
         <div class="shapes">
+            <button onclick="selectAllShapes()">Select all</button>
+            <button onclick="clearAllShapes()">Clear all</button>
             <label for="shape_c">Shape C</label><input type="checkbox" id="shape_c" checked>
             <label for="shape_a">Shape A</label><input type="checkbox" id="shape_a" checked>
             <label for="shape_g">Shape G</label><input type="checkbox" id="shape_g" checked>
             <label for="shape_e">Shape E</label><input type="checkbox" id="shape_e" checked>
             <label for="shape_d">Shape D</label><input type="checkbox" id="shape_d" checked>
-            <button onclick="selectAllShapes()">Select all</button>
-            <button onclick="clearAllShapes()">Clear all</button>
         </div>
         
         <button onclick="getRandom()">Get Random Values</button>

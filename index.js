@@ -67,7 +67,7 @@ function getRandom() {
         var m = randomArrayValue(modes);
         var sh = randomArrayValue(shapes);
 
-        result += '<br/>' + n + sf + ' ' + q + ' ' + m + ' ' + sh + '<br/>';
+        result += '<br/>' + n + sf +  q + ' ' + m + ' ' + sh + '<br/>';
     }
     document.getElementById('result').innerHTML=result;
 }
